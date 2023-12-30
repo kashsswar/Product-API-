@@ -1,0 +1,242 @@
+/* productList.css */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+li h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+li p {
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.add-button {
+  margin-top: 20px;
+}
+
+.add-button button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-button button:hover {
+  background-color: #1a682f;
+}
+
+.loading {
+  font-style: italic;
+  color: #999;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* Styles for mobile screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+  
+  li h2 {
+    font-size: 16px;
+  }
+  
+  li p {
+    font-size: 14px;
+  }
+  
+  .buttons button {
+    font-size: 14px;
+  }
+  
+  .add-button button {
+    font-size: 16px;
+  }
+  
+  .search-input {
+    width: 150px;
+    font-size: 14px;
+  }
+}
+
+/* Styles for tablet screens */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  li h2 {
+    font-size: 18px;
+  }
+  
+  li p {
+    font-size: 16px;
+  }
+  
+  .buttons button {
+    font-size: 16px;
+  }
+  
+  .add-button button {
+    font-size: 18px;
+  }
+  
+  .search-input {
+    width: 200px;
+    font-size: 14px;
+  }
+}
+
+/* Styles for laptop screens */
+@media only screen and (min-width: 901px) {
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  li h2 {
+    font-size: 22px;
+  }
+  
+  li p {
+    font-size: 18px;
+  }
+  
+  .buttons button {
+    font-size: 18px;
+  }
+  
+  .add-button button {
+    font-size: 20px;
+  }
+  
+  .search-input {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.add-product-btn {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-product-btn button {
+  background-color: #2196f3;
+  margin: 0;
+}
+
+.add-product-btn button:hover {
+  background-color: #0b7dda;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #ffb6c1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+}
+
+.pagination button.disabled {
+  background-color: #ddd;
+  color: #999;
+  cursor: not-allowed;
+}
